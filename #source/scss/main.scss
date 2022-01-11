@@ -17,7 +17,9 @@ $collith:#535252;
 // Header ##########################################
 .wrapper_header {
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
+	align-items: center;
 	width: 100%;
 	height: 60px;
 	background-color: #2F2F2F;
@@ -101,6 +103,26 @@ $collith:#535252;
 		transition: all 0.3s ease 0s;
 		color: #535252;
 	}
+}
+
+.header_two {
+	display: flex;
+	justify-content: start;
+	width: 1185px;
+	border-radius: 8px;
+	background-color: #2F2F2F;
+	margin-top: 18px;
+	padding: 10px;
+}
+.header_two a {
+	margin: 0 6px 0 6px;
+}
+.header_two a:hover {
+		transition: all 0.3s ease 0s;
+		color: #535252;
+}
+.he_link_ac {
+	text-decoration: underline;
 }
 
 // Контент ##########################################
@@ -300,13 +322,13 @@ $collith:#535252;
 
 }
 
-.header {
+.ul_link_header {
+	display: none;
 }
 
-.link_header {
+.header {
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	width: 100%;
 }
 
 .logo a {
@@ -314,6 +336,10 @@ $collith:#535252;
 }
 
 .wrapper_header .header .link_header .ul_li_link_header{
+	display: none;
+}
+
+.header_two {
 	display: none;
 }
 
@@ -365,4 +391,30 @@ $collith:#535252;
 	margin-bottom: 70px;
 }
 
+}
+
+
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 420px) {
+  	.wrapper_header .header {
+  		display: flex;
+  		justify-content: center;
+  		width: 100%;
+  	}
+  	.wrapper_header .header .link_header {
+	    width: 100%;
+    	display: flex;
+    	justify-content: space-between;
+    	margin: 0 8%;
+	}
+	.header_two {
+		display: none;
+}
+	.header_two a {
+		display: none;
+}
+	.wrapper_header .header .ul_link_header {
+		display: none;
+	}
 }
