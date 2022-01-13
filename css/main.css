@@ -584,6 +584,8 @@ a {
     background-color: #2F2F2F;
     width: 100%;
     height: 54px;
+    -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   }
 
   .mobile_body_header_wr {
@@ -645,7 +647,7 @@ a {
   }
 
   .posts_m {
-    margin: 10px 0;
+    margin-top: 10px;
     padding: 15px 10px;
     background-color: #2F2F2F;
   }
@@ -754,5 +756,10 @@ a {
 
   .mobile_body_header_wr a {
     margin: 0 20px 0 20px;
+  }
+
+  .footer_m {
+    margin-top: 10px;
+    margin-bottom: 666px;
   }
 }
